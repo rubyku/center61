@@ -32,8 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-#gem 'pg'
-gem 'sqlite3'
+gem 'pg'
+#gem 'sqlite3'
 
 gem 'rails_12factor', group: :production
 
