@@ -10,20 +10,53 @@
 </head>
 <body>
 
-<div class="nav">
-	<div class="container">
-	</div>
-</div>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Center61</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/space">Space</a></li>
+        <li><a href="http://center61.getmemberdriven.com/members">Members</a></li>
+        <li><a href="http://center61.getmemberdriven.com/organizations">Organizations</a></li>
+        <li><a href="http://center61.tumblr.com">News & Events</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://center61.getmemberdriven.com/join">Sign up</a></li>
+        <li><a href="http://center61.getmemberdriven.com/sessions/new">Log in</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+
 <div class="nav_accent"></div>
 
 <div class="container">
 	<%= yield %>
 </div>
 
+<div class="nav_accent"></div>
 <div class="footer">
   <center>
-  <p>Copyright 2013</p>
-  <p>All Rights Reserved</p>
+    <div class="row">
+      <p style="margin: 3em 0">
+        <%= link_to (image_tag 'icon_twitter.png'), "http://www.twitter.com/c61tweets", target: "blank" %>
+        <%= link_to (image_tag 'icon_facebook.png'), "http://www.facebook.com/center61", target: "blank" %>
+        <%= link_to (image_tag 'icon_tumblr.png'), "http://center61.tumblr.com/", target: "blank" %>
+      </p>
+      <p>Copyright 2013</p>
+      <p style="padding-bottom: 5em">All Rights Reserved</p>
+    </div>
   </center>
 </div>
 

@@ -1,12 +1,105 @@
-<%= image_tag 'homepage_banner.png' %>
-<%= image_tag 'center61_space.png', style: "float: left" %>
-<div style="float: left; width: 530px; height: 265px">
-	<center>
-		<h1>Become a member. <br>Co-work with us, starting at <br>just $25 a month.</h1>
-		<a href="http://center61.wufoo.com/forms/center61-membership-application/" class="homepage_button">Apply for Membership</a>
-	</center>
+<div class="row">
+  <%= image_tag 'homepage_banner.png', class: "img-responsive hidden-xs visible-sm" %>
+  <%= image_tag 'homepage_banner_small.jpg', class: "img-responsive visible-xs" %>
 </div>
 
-<%= link_to (image_tag 'icon_twitter.png'), "http://www.twitter.com/c61tweets", target: "blank" %>
-<%= link_to (image_tag 'icon_facebook.png'), "http://www.facebook.com/center61", target: "blank" %>
-<%= link_to (image_tag 'icon_tumblr.png'), "http://center61.tumblr.com/", target: "blank"  %>
+<div class="row light-grey">
+  <div class="col-md-4" style="padding: 0">
+    <%= image_tag 'homepage_space.png', class: "img-responsive hidden-xs pull-left" %>
+  </div>
+  <div class="col-md-8 box">
+    <center>
+  		<h1 class="homepage" style="margin-bottom: 1.8em">
+        Become a member. <br>Co-work with us, starting at <br>just $25 a month.
+      </h1>
+  		<p style="margin-bottom: 1.8em">
+        <a class="orange homepage_button white-text caps" href="http://center61.getmemberdriven.com/join" >Apply for Membership</a>
+      </p>
+    </center>
+  </div>
+</div>
+
+<div class="row box white">
+  <center>
+    <h1 style="margin-bottom: 1em">The destination for changemakers</h1>
+    <p style="font-size: 18px; width: 93%; margin-bottom: 2em">At the intersection of social justice, entrepreneurship, and place; Center61 is the physical destination for Austin’s changemakers.  More than just a coworking space, we offer a community of like-minded people that aspire to make the world a better place.  Drop in anytime!</p>
+  </center>
+  <div class="col-xs-12 col-sm-4 col-md-4">
+    <center>
+      <%= image_tag 'homepage_values_1.png', class: "img-responsive" %>
+      <h3>People</h3>
+      <p>Members first.<br>We exist to serve the needs<br> of our members.</p>
+    </center>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-4">
+    <center>
+      <%= image_tag 'homepage_values_2.png', class: "img-responsive" %>
+      <h3>Amplify</h3>
+      <p>Our members do great work.<br>It's our job to make sure the <br>world knows about it.</p>
+    </center>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-4">
+    <center>
+      <%= image_tag 'homepage_values_3.png', class: "img-responsive" %>
+      <h3>Impact</h3>
+      <p>We are making Austin the <br>social innovation capital <br>of the world. Join us!</p>
+    </center>
+  </div>
+</div>
+
+<div class="row">
+  <%= image_tag 'center61_space.jpg', class: "img-responsive visible-xs" %>
+</div>
+
+<div class="row hidden-xs" style="margin-bottom: -20px">
+  <%= image_tag 'homepage_video_thumbnail.png', class: "img-responsive" %>
+  <center>
+    <a data-toggle="modal" href="#myModal"><img src="assets/icon-video.png" style="margin-top: -550px"></a>
+  </center>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <iframe width="531" height="398" src="//www.youtube.com/embed/pX3r6iLssHg?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="row box white" style="padding-bottom: 4em">
+  <div class="col-md-6">
+  <h1 class="homepage hidden-xs hidden-sm" style="margin: 1.5em 0 2em 2em">Become a member. <br>Co-work with us, starting <br>at just $25 a month.</h1>
+  <center><h1 class="homepage visible-xs visible-sm" style="margin: 0">Become a member. <br>Co-work with us, starting <br>at just $25 a month.</h1></center>
+  </div>
+  <div class="col-md-6">
+    <center>
+    <p style="padding-top: 4.5em">
+      <a class="orange homepage_button white-text caps" href="http://center61.getmemberdriven.com/join" >Apply for Membership</a>
+    </p>
+    </center>
+  </div>
+</div>
+
+<div class="row">
+  <%= image_tag 'homepage_members_collage.png', class: "img-responsive hidden-xs" %>
+</div>
+
+<div class="row dark-grey box">
+  <center>
+      <p class="caps white-text">Stay up to date with our newsletter:
+        <form action="http://center61.us5.list-manage.com/subscribe/post?u=df83d37ff64efed1ac9b00186&amp;id=e6db5f2dae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" style="width: 300px; height: 35px; margin-top: 5px; text-align: center" required>
+        </form>
+      </p>
+      <!--End mc_embed_signup-->
+  </center>
+</div>
+
+<div class="row visible-md visible-lg" style="padding: 5em">
+</div>
+
+
